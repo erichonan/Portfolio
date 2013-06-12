@@ -1,0 +1,34 @@
+/*css */
+
+body	{
+
+}
+
+.box	{
+	width: 180px;
+	height: 180px;
+	background-color: #ddd;
+}
+
+#header	{
+	background-color: #ddd;
+}
+
+#projectsModule	{
+	border: 1px solid #EEE;
+	
+}
+
+#container	{
+	width: 900px;
+	margin: auto;
+}
+
+#footer	{
+	background-color: #000;
+}
+
+#footer h2	{
+	color: #FFF;
+}
+

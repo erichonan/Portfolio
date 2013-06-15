@@ -11,30 +11,126 @@
 	<!-- good thing to note here is the media tag. This is where I would designate a separate stylesheet for mobile-->
 	<link rel="styleSheet" type="text/css" href="css/master.css" media="all">
 
+	<!-- jquery import -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script language="javascript">	
+	$( document ).ready(
+		function() {
+		$(".clickable").click(
+			function()
+			{
+				showDetails();
+				//window.location = $(this).find("a").attr("href");
+			})
+		
+	});
+	
+	function showDetails()
+	{
+		alert("testing");
+	}
+	</script>
+
 	<!-- Date: 2012-10-25 -->
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<h1>Eric Honan</h1>
-			<p>
+			<h1>Eric Honan: Developer</h1>
+			<p>Over the past year I have been transitioning to iOS development (with some Front End Development on the side). Previously I worked with Flash and Actionscript 3.</p>
 		</div>
 		
 		<div id="projectsModule">
-			<h2>Projects</h2>
+			<h2>Expertise</h2>
 			
-			<div class="box">
-				<p>iPhone App</p>
+			<div class="clickable project blue" url="http://www.google.com">
+				<h3><a href="http://www.google.com">OBJECTIVE-C/XCODE</a></h3>
 			</div>
 			
-			<div class="box">
-				<p>Hanwha Solar</p>
+			<div class="project blue">
+				<h3><a href="http://www.google.com">HANHWA SOLAR</a></h3>
 			</div>
 			
-			<div class="box">
-				<p>Flash Work</p>
+			<div class="project blue">
+				<h3><a href="http://www.google.com">FLASH/AS3</a></h3>
 			</div>
-		</div>		
+			
+			<div class="project blue">
+				<h3><a href="http://www.google.com">ANIMATION</a></h3>
+			</p>
+		</div>
+		
+		<div id="resume">
+			<h2>Resume</h2>
+			<h3>Eric Honan<h3>
+			<p>www.erichonan.com  .  eric@erichonan.com  .  East Village, New York, NY</p>
+
+			<h4>Summary:</h4>
+			<p>Professional Developer with five years’ experience with an Internet startup, creative agencies and freelancing. Demonstrated success in delivering interactive development with a focus on iOS and Front End. Recognized for the ability to work well in a team environment, attentiveness to detail and managing multiple projects simultaneously.</p>
+
+			<h4>Skills:</h4>
+
+			<p>Expert knowledge of ActionScript 3, Flash, JSFL, and Flash Builder</p>
+			<p>Working knowledge of hand coded CSS/XHTML, Objective-C, XCode, Javascript, and Adobe Creative Suite</p>
+
+			<h4>Employment History:</h4>
+
+			<h5>Freelance, New York, NY</h5>
+			<p>7/2012 - present</p>
+			<p>Developer</p>
+			<ul>
+				<li>Current project - Developing Mobile App User Interfaces with xCode and Objective-C</li>
+				<li>Built Adobe AIR rich media applications for desktop</li>
+				<li>Created animation and managed video content using Flash and ActionScript 3</li>
+			</ul>
+			
+			<h5>OMGPOP/Zynga, New York, NY</h5>
+			<p>5/2010 - 6/2012</p>
+			<p>Developer/Flash Artist</p>
+			<ul>
+				<li>Built user interfaces and components with Flex 4 and ActionScript 3 for social games</li>
+				<li>Collaborated with Art Director to create animated game assets and user interface elements</li>
+				<li>Optimized and managed graphic libraries and acted as a liaison between developers and artists</li>
+				<li>Automated processes in Flash with JSFL</li>
+			</ul>
+
+			<h5>Nike, Portland, OR</h5>
+			<p>8/2008 - 6/2010</p>
+			<p>Developer (freelance)</p>
+			<ul>
+				<li>Delivered flash and animated educational demonstrations for Nike products</li>
+				<li>Used timeline animation and flash components to build motion pieces</li>
+				<li>Modified images and assets to meet client specifications</li>
+			</ul>
+
+			<h5>StruckAxiom, Portland, OR</h5>
+			<p>9/2008 - 3/2010</p>
+			<p>Developer</p>
+			<ul>
+				<li>Mastered Object-Oriented Programming, script libraries, and timeline animation for online marketing campaign development</li>
+				<li>Worked with services such as Eye Wonder to create and traffic banner advertisements to websites</li>
+			</ul>
+
+			<h5>Struck, Portland, OR</h5>
+			<p>1/2008 - 6/2008</p>
+			<p>Web Development Intern</p>
+			<ul>
+				<li>Advanced ActionScript 3 and Object-Oriented Programming knowledge</li>
+				<li>Observed and participated in creative process and development of projects</li>
+			</ul>
+			
+			<h5>Summit Projects, Hood River, OR</h5>
+			<p>6/2007 - 12/2007</p>
+			<p>Web Development Intern</p>
+			<ul>
+				<li>Completed production and motion tasks for Nike and Lucas Arts projects</li>
+				<li>Added functionality to designs using XHTML and CSS</li>
+			</ul>
+			
+			<h5>Education:</h5>
+			<p>Bachelors of Science - Interactive Media Design</p>
+			<p>Art Institute of Portland 06/2008</p>
+		</div>
 		<div id="footer">
 			<h2>Footer</h2>
 		</div>

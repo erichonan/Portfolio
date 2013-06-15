@@ -1,21 +1,78 @@
 /*css */
 
-body	{
-
+*	{
+	padding: 0;
+	margin: 0;
 }
 
-.box	{
-	width: 180px;
+body	{
+	font-family: sans-serif;
+	width: 100%;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	color: #0b4d4e;
+}
+
+h1	{
+	font-size: 425%;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.project	{
+	width: 100%;
 	height: 180px;
-	background-color: #ddd;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.project a:hover {
+	color: #0b4d4e;
+	text-decoration: none;
+}
+
+.project a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.project a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.project h3	{
+	position: relative;
+	top: 40%;
+	text-align: center;
+	color: #FFF;
+	font-size: 250%;
+}
+
+.blue	{
+	background-color: #78b8c1;
+	border-bottom: 10px solid #0b4d4e;
+	font-color: #FFF;
+	
+}
+
+.red {
+	background-color: red;
+	border-bottom: 10px solid #BB0000;
+}
+
+.orange {
+	background-color: orange;
+	border-bottom: 10px solid #BBBB00;
 }
 
 #header	{
-	background-color: #ddd;
 }
 
 #projectsModule	{
-	border: 1px solid #EEE;
+	/*border: 1px solid #EEE;*/
 	
 }
 
@@ -25,7 +82,6 @@ body	{
 }
 
 #footer	{
-	background-color: #000;
 }
 
 #footer h2	{

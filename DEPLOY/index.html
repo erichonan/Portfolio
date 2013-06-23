@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Eric Honan is a Flash Developer</title>
+	<title>Eric Honan: User Interface Developer</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Eric Honan">
 		
@@ -13,51 +13,73 @@
 
 	<!-- jquery import -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script language="javascript">	
+	<script language="javascript">
+	/*
+	var open = false;
 	$( document ).ready(
 		function() {
 		$(".clickable").click(
 			function()
 			{
-				showDetails();
+				//showDetails();
 				//window.location = $(this).find("a").attr("href");
+				if(!open)
+				{
+					$(".slidingContent").animate({"top": "450px"}, "fast");
+					open = true;
+				}
+				else
+				{
+					$(".slidingContent").animate({"top": "100px"}, "fast");
+					open = false;
+				}
 			})
-		
 	});
-	
-	function showDetails()
-	{
-		alert("testing");
-	}
+	*/
 	</script>
 
 	<!-- Date: 2012-10-25 -->
 </head>
 <body>
+	<div id="header">
+		<h1>Eric Honan</h1>
+		<p class="summary">I have six years of experience as a developer at agencies, startups and as a consultant. My broad experience in development, animation and motion design, as well as a good eye for design makes me well suited as a User Interface Developer. I am looking for a user interface developer role in a dynamic and exciting company. Take a look at my skills below and please don't hesitate to <a href="#contactForm">contact me</a> if you are looking to hire.</p>
+	</div>
+	
+	<div id="navigation">
+		<ul>
+			<li><a href="#expertise">Expertise</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#contactForm">Contact</a></li>
+		</ul>
+	</div>
 	<div id="container">
-		<div id="header">
-			<h1>Eric Honan: Developer</h1>
-			<p>Over the past year I have been transitioning to iOS development (with some Front End Development on the side). Previously I worked with Flash and Actionscript 3.</p>
-		</div>
-		
-		<div id="projectsModule">
+		<div id="expertise">
 			<h2>Expertise</h2>
 			
 			<div class="clickable project blue" url="http://www.google.com">
-				<h3><a href="http://www.google.com">OBJECTIVE-C/XCODE</a></h3>
+				<h3><a href="">OBJECTIVE-C/XCODE</a></h3>
+				<div class="skillsDescription">
+					<h4>Experience</h4>
+						<p>Past experience, projects, samples</p>
+						<p>Future goals and challenges. What I want to do</p>
+				</div>
 			</div>
 			
 			<div class="project blue">
-				<h3><a href="http://www.google.com">HANHWA SOLAR</a></h3>
+				<h3><a href="">ANIMATION</a></h3>
+				<div class="skillsDescription">
+					<h4>Experience</h4>
+				</div>
 			</div>
 			
 			<div class="project blue">
-				<h3><a href="http://www.google.com">FLASH/AS3</a></h3>
+				<h3><a href="">FLASH/AS3</a></h3>
+				<div class="skillsDescription">
+					<h4>Experience</h4>
+					<p>
+				</div>
 			</div>
-			
-			<div class="project blue">
-				<h3><a href="http://www.google.com">ANIMATION</a></h3>
-			</p>
 		</div>
 		
 		<div id="resume">
@@ -131,9 +153,13 @@
 			<p>Bachelors of Science - Interactive Media Design</p>
 			<p>Art Institute of Portland 06/2008</p>
 		</div>
-		<div id="footer">
-			<h2>Footer</h2>
+		
+		<div id="contactForm">
+			<p>Contact form goes here.</p>
 		</div>
+	</div>
+	<div id="footer">
+		<h2>Footer</h2>
 	</div>
 </body>
 </html>

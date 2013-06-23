@@ -8,6 +8,14 @@
 body	{
 	font-family: sans-serif;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#header	{
+	padding: 0;
+	margin: 0;
+	background-color: #DDD;
 }
 
 h1, h2, h3, h4 {
@@ -17,8 +25,33 @@ h1, h2, h3, h4 {
 
 h1	{
 	font-size: 425%;
-	margin: 30px 0;
+	padding-top: 30px;
+	/*margin: 30px 0 10px 0;*/
 	text-align: center;
+}
+
+.summary	{
+	width:600px;
+	color: #333;
+	font-size: 18px;
+	margin: 10px auto 30px auto;
+	padding-bottom: 30px;
+}
+
+.blue	{
+	background-color: #78b8c1;
+	border-bottom: 10px solid #0b4d4e;
+	font-color: #FFF;
+}
+
+.red {
+	background-color: red;
+	border-bottom: 10px solid #BB0000;
+}
+
+.orange {
+	background-color: orange;
+	border-bottom: 10px solid #BBBB00;
 }
 
 .project	{
@@ -45,29 +78,22 @@ h1	{
 
 .project h3	{
 	position: relative;
-	top: 40%;
+	top: 10%;
+	height: 75px;
 	text-align: center;
 	color: #FFF;
 	font-size: 250%;
 }
 
-.blue	{
-	background-color: #78b8c1;
-	border-bottom: 10px solid #0b4d4e;
-	font-color: #FFF;
-	
+.skillsDescription	{
+	width: 50%;
+	margin: auto;
 }
 
-.red {
-	background-color: red;
-	border-bottom: 10px solid #BB0000;
+.skillsDescription li	{
+	margin-left: 25px;
+	list-style: none;
 }
-
-.orange {
-	background-color: orange;
-	border-bottom: 10px solid #BBBB00;
-}
-
 #header	{
 }
 
@@ -82,9 +108,20 @@ h1	{
 }
 
 #footer	{
+	background-color: #222;
+	height: 200px;
+	width: 100%;
 }
 
 #footer h2	{
 	color: #FFF;
 }
 
+/*
+.slidingContent	{
+	height: 200px;
+	width: 500px;
+	background-color: #DDD;
+	text-align: center;
+	position: absolute;
+}*/
